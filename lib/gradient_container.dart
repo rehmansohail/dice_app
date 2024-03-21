@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:dice_app/dice_roll.dart';
 
 class gradientContainer extends StatelessWidget {
   gradientContainer({required this.colors, super.key});
@@ -12,8 +13,8 @@ class gradientContainer extends StatelessWidget {
               colors: colors,
               begin: Alignment.topLeft,
               end: Alignment.bottomLeft)),
-      child: const Center(
-        child: Text("Hello World"),
+      child: Center(
+        child: diceRoller(),
       ),
     );
   }
